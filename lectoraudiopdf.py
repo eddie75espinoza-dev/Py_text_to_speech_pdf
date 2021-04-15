@@ -55,8 +55,8 @@ if __name__ == '__main__':
 ~ 0- Spanish / Female 
 ~ 1- English / Female
 ~ 2- English / Male: '''))    
-    page_init = input('Initial page: ').strip()
-    page_end = input('End page: ').strip()
+    page_init, page_end= input('Initial page and end page: ').strip().split()
+    #page_end = input('End page: ').strip()
     playPdf(int(page_init), int(page_end), text_languaje)
 
     
